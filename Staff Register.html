@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Staff Register</title>
+<!-- Adding Stylesheet and JavaScript Files -->
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<script type="text/javascript" src="JavaScript.js"></script>
+<style type="text/css">
+</style>
+</head>
+<!-- Starting Main Body-->
+<body style="color: rgb(255, 255, 255); background-image: url('images1/ivy-tech-video-background.jpg')">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#8FBC8F">
+  <tr>
+    <td height="175"><table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="232" height="198" align="center" valign="middle"><img src="registergif.gif" width="270" height="115"></td>
+        <td width="728" align="center" valign="middle">
+        <!--Menu Bar -->
+        <nav>
+    	<ul>
+        <li><a href="Admin.html">Home</a></li>
+        <li><a href="Student Register.html">Student Register</a></li>
+        <li><a href="Staff Register.html">Staff Register</a></li>               
+        <li><a href="index.html">Logout</a></li>
+    	</ul>
+</nav>
+        </td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<br/>
+<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+  <!--Staff Registration Module -->
+    <td><div id="wrapper" style="border: double medium rgb(0,0,0);box-shadow: 3px 3px 4px 4px rgb(153,153,153); border-radius: 20px;padding:20px; margin: 10px auto">
+      <div >
+                            <!-- Form Containing Fields to register a new Staff Member-->
+                            <form  name="StaffRegistrationForm" > 
+                                <h1>Register New Staff Member (IVY TECH)</h1> 
+								<p>
+                                   <label for="name" >Staff ID</label><br/>
+                                   <input id="name" number="number" type="number" onkeypress="return onlyNumber(event,this);"/>
+                                 </p>
+                                
+                                <p> 
+                                    <label for="facultyname" >Name</label><br/>
+                                    <input name="facultyname"  type="text" onkeypress="return onlyAlphabets(event,this);" /> 
+                                </p>
+                                <p> 
+                                    <label for="category"  > Category</label><br/>
+                                    <select class="usertype" name="category">
+                                    <option value="select">-select-</option>
+                                    <option value="teachingstaff">Factually Professor</option>  
+                                    <option value="teachingstaff">Part-Time Professor</option>                                     
+                                    <option value="nonteachingstaff">Staff</option>
+                                    
+                                                                    
+                                    </select>
+                                </p>
+                                
+                                      <p>
+                                <label for="qualification"> Degree Level</label><br/>
+                                    <select  name="qualification">
+                                    <option value="select">-select-</option>
+                                    <option value="doctorate">Doctorate</option>
+                                    <option value="masters">Masters</option>
+                                    <option value="bachelors">Bachelors</option>
+									                                    
+                                    </select>
+                                 </p>
+                                 <p>
+                                  <label  for="gender"> Gender</label><br/>
+                                    <select class="usertype" name="gender">
+                                     <option value="select">-select-</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="female">Transgender</option>
+                                    <option value="female">Prefer not to disclose</option>
+                                    		                         
+                                    </select></p>
+                               	<p> 
+                                    <label for="dob" >Date of birth </label><br/>
+                                    <input id="dob" name="dob"   type="date" onSelect="checkAge()" />
+                                </p>
+                                <p> 
+                                    <label for="doj" >Date of joining </label><br/>
+                                    <input name="doj"   type="date" onSelect="checkDOJ()" />
+                                </p>
+                                
+                                 <p> 
+                                    <label for="password"  >Enter your password </label><br/>
+                                    <input  name="password"  type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                
+                                <p> 
+                                    <label for="passwordconfirm"  >Please confirm your password </label><br/>
+                                    <input  name="confirmpassword"  type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p> 
+                                    <label for="emailsignup"   > Your email</label><br/>
+                                    <input  name="email" type="email" placeholder="mysupermail@mail.com"/> 
+                                </p>
+                                <p> 
+                                    <label for="phone"> Your Mobile Number</label><br/>
+                                    <input name="phone"  type="text" placeholder="10-digits" min="10"/> 
+                                </p>
+                                <p> 
+                                    <label for="address"   > Your Address</label><br/>
+                                    <input id="emailsignup" name="address"  type="textarea" placeholder="address" min="10"/> 
+                                </p>
+                                
+                                <p> 
+									<input type="button" value="Register" onClick="registerStaffViaJs()"/> 
+								</p>
+								
+                    </div>
+                               
+                              </form>
+                        </div></td><!--End of Student Registration Module -->
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Stating parameters for setting the page body*/
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(templatemo_body.png);
+	background-repeat: repeat;
+	color: rgb(255,0,0);
+}
+
+/*CSS for Navigation Part*/
+nav  {
+    display: block;
+    width: 95%;
+    overflow: hidden;
+}
+/*CSS for ul in Navigation Part*/
+nav ul {
+    margin: 50px 0 10px 0;
+    padding: .7em;
+    float: left;
+    list-style: none;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: .5em;    
+    box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 2px 1px rgba(0,0,0,.8) inset; 
+}
+/*CSS for li in Navigation Part*/
+nav li {
+    float:left;
+}
+
+nav a {
+    float:left;
+    padding: .8em 1.5em;
+    text-decoration: none;
+    color: #555;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff #ccc #999 #eee;
+    background: #b78989;
+    background: linear-gradient(#f5f5f5, #b78989);            
+ }
+ /*CSS for hover effect in Navigation Part*/
+nav a:hover, nav a:focus {
+    outline: 0;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+    background: #103a66;
+    background: linear-gradient(#103a66, #f8009d);
+}
+/*CSS for active part under Navigation Part*/
+nav a:active {
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.3) inset;
+}
+ 
+nav li:first-child a {
+    border-left: 0;
+    border-radius: 2px 0 0 2px;            
+}
+
+nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 2px 2px 0;            
+}

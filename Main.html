@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<!-- Adding Stylesheet and JavaScript Files -->
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<script type="text/javascript" src="JavaScript.js"></script>
+<style type="text/css">
+</style>
+</head>
+<!-- Starting Main Body-->
+<body style="color: #FFFFFF; background-color: #8FBC8F; background-image: url('images1/ivy-tech-video-background.jpg')">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#8FBC8F">
+  <tr>
+    <td height="175"><table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="232" height="198" align="center" valign="middle"><img src="registergif.gif" width="270" height="115"></td>
+        <td width="728" align="center" valign="middle">
+        <!--Menu Bar -->
+        <nav>
+    	<ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Student Register</a></li>
+        <li><a href="#">Staff Register</a></li>               
+        <li><a href="#">Logout</a></li>
+    	</ul>
+</nav>
+        </td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<br/>
+<table width="500" align="center" style="border: double medium rgb(0,0,0);box-shadow: 3px 3px 4px 4px rgb(153,153,153); border-radius: 20px;padding:20px; margin: 10px auto">
+  <tr>
+  <!--Login Module -->
+    <td><div id="login" >
+                            <form  autocomplete="on" name="loginDiv" > 
+                                <h1>Log in</h1> 
+                                
+                                <p> 
+                                    <label for="username" >Username</label><br/><br/>
+                                    <input id="username" name="username"  type="text" placeholder="myusername or mymail@mail.com"/>
+                                </p>
+                                <p> 
+                                    <label for="password"  > Your password </label><br/><br/>
+                                    <input id="password" name="password"  type="password" placeholder="eg. X8df!90EO" /> 
+                                </p>
+                                <p class="login button"> 
+                                    <input type="button" value="Login" onclick="checkUserViaJs()" /> 
+								</p>
+								
+                                
+                            </form>
+                        </div></td><!--End of login Module -->
+  </tr>
+</table>
+
+</body>
+</html>

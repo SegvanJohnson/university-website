@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Student Registert</title>
+<!-- Adding Stylesheet and JavaScript Files -->
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<script type="text/javascript" src="JavaScript.js"></script>
+</head>
+<!-- Starting Main Body-->
+<body style="color: #FFFFFF; background-image: url('images1/ivy-tech-video-background.jpg')">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#8FBC8F">
+  <tr>
+    <td height="175"><table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="232" height="198" align="center" valign="middle"><img src="registergif.gif" width="270" height="115"></td>
+        <td width="728" align="center" valign="middle">
+        <!--Menu Bar -->
+        <nav>
+    	<ul>
+        <li><a href="Admin.html">Home</a></li>
+        <li><a href="Student Register.html">Student Register</a></li>
+        <li><a href="Staff Register.html">Staff Register</a></li>               
+        <li><a href="index.html">Logout</a></li>
+    	</ul>
+</nav>
+        </td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<br/>
+<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+  <!--Student Registration Module -->
+    <td><div id="wrapper" style="border: double medium rgb(0,0,0);box-shadow: 3px 3px 4px 4px rgb(153,153,153); border-radius: 20px;padding:20px; margin: 10px auto">
+      <div >
+      <!-- Form Containing Fields to register a new Student-->
+        <form  name="StudentRegistrationForm" style="margin:auto">
+          <h1>Register New Student  at  (IVY TECH) </h1>
+                                <p>
+                                   <label for="name" >Student ID</label><br/>
+                                   <input id="name" number="number" type="number" onkeypress="return onlyNumber(event,this);"/>
+                                 </p>
+
+          <p>
+            <label for="name" >Name of Student</label><br/>
+            <input id="name" name="name" type="text" onkeypress="return onlyAlphabets(event,this);"/>
+          </p>
+          <p>
+            <label for="branch"> Major</label><br/>
+            
+            <select  name="branch"><br/>
+              <option value="select">-select-</option>
+              <option value="cse">Business Administration</option>
+              <option value="ece">Computer Science</option>
+              <option value="mca">Criminal Justice</option>
+              <option value="cse">Cyber Security/Information Assurance</option>
+              <option value="ece">Database Management and Administration</option>
+              <option value="mca">Entrepreneurship</option>
+              <option value="cse">General Education Transfer Core</option>
+              <option value="ece">General Studies</option>
+              <option value="mca">Information Technology Support</option>
+              <option value="mca">Library Technical Assistant</option>
+              <option value="mca">Manufacturing Production and Operations (MPRO)</option>
+              <option value="mca">Office Administration</option>
+              <option value="mca">Software Development</option>
+              <option value="mca">Supply Chain Management/Logistics</option>
+
+            </select>
+          </p>
+          <p>
+            <label for="batch"> Year </label><br/>
+            
+            <select name="batch"><br/>
+              <option value="select">-select-</option>
+              <option value="2005">2005</option>
+              <option value="2006">2006</option>
+              <option value="2007">2007</option>
+              <option value="2008">2008</option>
+              <option value="2009">2009</option>
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+
+            </select>
+          </p>
+          <p>
+            <label for="dob" >Date of birth </label><br/>
+            <input id="passwordsignup_confirm" name="dob"  type="date" onClick="checkAge()" />
+          </p>
+          <p>
+            <label  for="gender"> Gender</label><br/>
+            
+            <select name="gender">
+              <option value="select">-select-</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="female">Transgender</option>
+              <option value="female">Prefer not to disclose</option>
+            </select>
+          </p>
+          <p>
+            <label for="password">Password </label><br/>
+            <input id="passwordsignup" name="password"  type="password"/>
+          </p>
+          <p>
+            <label for="confirmpassword"  >Please confirm Password </label><br/>
+            <input id="passwordsignup_confirm" name="confirmpassword"  type="password"/>
+          </p>
+          <p>
+            <label for="emailsignup"   > E-mail</label><br/>
+            <input id="emailsignup" name="email"  type="email"/>
+          </p>
+          <p>
+            <label for="mobilenumber" > Mobile Number</label><br/>
+            <input id="emailsignup" name="mobilenumber"  type="text" placeholder="10-digits" min="10" max="10"/>
+          </p>
+          <p>
+            <label for="mobilenumber"  > Address</label><br/>
+            <input id="emailsignup" name="address"  type="text" placeholder="address"/>
+          </p>
+          <p class="signin button">
+            <input type="button" value="Sign up" onclick="registerStudentViaJs()"/>
+          </p>
+          
+        </form>
+      </div>
+    </div></td><!--End of Student Registration Module -->
+  </tr>
+</table>
+
+</body>
+</html>
